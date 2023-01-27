@@ -19,6 +19,16 @@ function Featured() {
         <p className="desc">
           Previous transaction processing.Last payment may not be included.
         </p>
+        <div className="summary">
+          <div className="item">
+            <div className="itemTitle">Target</div>
+            <div className="itemResult">
+              <div className="resultAmount">$500k</div>
+            </div>
+          </div>
+          <div className="item"></div>
+          <div className="item"></div>
+        </div>
       </div>
     </div>
   );
