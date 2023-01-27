@@ -3,6 +3,8 @@ import "./featured.scss";
 import { MoreVert } from "@mui/icons-material";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { KeyboardArrowDown } from "@mui/icons-material";
+import { KeyboardArrowUpOutlined } from "@mui/icons-material";
 function Featured() {
   return (
     <div className="featured">
@@ -22,12 +24,25 @@ function Featured() {
         <div className="summary">
           <div className="item">
             <div className="itemTitle">Target</div>
-            <div className="itemResult">
+            <div className="itemResult negative">
+              <KeyboardArrowDown fontSize="small" />
               <div className="resultAmount">$500k</div>
             </div>
           </div>
-          <div className="item"></div>
-          <div className="item"></div>
+          <div className="item">
+            <div className="itemTitle">Last Week</div>
+            <div className="itemResult positive">
+              <KeyboardArrowUpOutlined fontSize="small" />
+              <div className="resultAmount">$500k</div>
+            </div>
+          </div>{" "}
+          <div className="item">
+            <div className="itemTitle">Last Month</div>
+            <div className="itemResult positive">
+              <KeyboardArrowUpOutlined fontSize="small" />
+              <div className="resultAmount">$500k</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
