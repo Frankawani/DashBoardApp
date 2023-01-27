@@ -44,7 +44,7 @@ const data = [
 function Chart() {
   return (
     <div className="chart">
-      <div className="title">"Last 6 Months (Revenue)"</div>
+      <div className="title">Last 6 Months (Revenue)</div>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           width={500}
@@ -63,7 +63,7 @@ function Chart() {
           <Tooltip />
           <Area
             type="monotone"
-            dataKey="uv"
+            dataKey="Total"
             stackId="1"
             stroke="#8884d8"
             fill="#8884d8"
