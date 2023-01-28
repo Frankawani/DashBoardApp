@@ -57,7 +57,7 @@ function Chart() {
             bottom: 0,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="3 3" className="chartGrid" />
           <XAxis dataKey="name" stroke="gray" />
           <YAxis />
           <Tooltip />
