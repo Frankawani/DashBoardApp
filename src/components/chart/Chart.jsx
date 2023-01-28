@@ -16,28 +16,28 @@ const data = [
     Total: 1200,
   },
   {
-    name: "January",
+    name: "Febuary",
     Total: 1200,
   },
   {
-    name: "January",
-    Total: 1200,
+    name: "March",
+    Total: 2100,
   },
   {
-    name: "January",
-    Total: 1200,
+    name: "April",
+    Total: 800,
   },
   {
-    name: "January",
-    Total: 1200,
+    name: "May",
+    Total: 1600,
   },
   {
-    name: "January",
-    Total: 1200,
+    name: "June",
+    Total: 900,
   },
   {
-    name: "January",
-    Total: 1200,
+    name: "July",
+    Total: 1700,
   },
 ];
 
@@ -45,7 +45,7 @@ function Chart() {
   return (
     <div className="chart">
       <div className="title">Last 6 Months (Revenue)</div>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" aspect={2 / 1}>
         <AreaChart
           width={500}
           height={400}
@@ -58,13 +58,12 @@ function Chart() {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey="name" stroke="gray" />
           <YAxis />
           <Tooltip />
           <Area
             type="monotone"
             dataKey="Total"
-            stackId="1"
             stroke="#8884d8"
             fill="#8884d8"
           />
@@ -75,3 +74,31 @@ function Chart() {
 }
 
 export default Chart;
+/*{
+    name: "January",
+    Total: 1200,
+  },
+  {
+    name: "January",
+    Total: 1200,
+  },
+  {
+    name: "January",
+    Total: 1200,
+  },
+  {
+    name: "January",
+    Total: 1200,
+  },
+  {
+    name: "January",
+    Total: 1200,
+  },
+  {
+    name: "January",
+    Total: 1200,
+  },
+  {
+    name: "January",
+    Total: 1200,
+  }, */
