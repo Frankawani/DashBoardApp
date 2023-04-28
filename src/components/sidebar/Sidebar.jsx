@@ -12,11 +12,19 @@ import WebStoriesIcon from "@mui/icons-material/WebStories";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import LogoutIcon from "@mui/icons-material/Logout";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+
 function Sidebar() {
+  const linkStyle = {
+    textDecoration: "none",
+  };
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">FrankTech</span>
+        <Link to="/" style={linkStyle}>
+          <span className="logo">FrankTech</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -26,10 +34,12 @@ function Sidebar() {
             <DashboardIcon className="icon" />
             <span>Dasboard</span>
           </li>
-          <li>
-            <PersonOutlineOutlinedIcon className="icon" />
-            <span>Users</span>
-          </li>{" "}
+          <Link to="/users" style={linkStyle}>
+            <li>
+              <PersonOutlineOutlinedIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
           <li>
             <Inventory2Icon className="icon" />
             <span>Products</span>
