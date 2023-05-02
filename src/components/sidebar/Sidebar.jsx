@@ -12,8 +12,8 @@ import WebStoriesIcon from "@mui/icons-material/WebStories";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import LogoutIcon from "@mui/icons-material/Logout";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+
+import {  Link } from "react-router-dom";
 
 function Sidebar() {
   const linkStyle = {
@@ -24,7 +24,7 @@ function Sidebar() {
       <div className="top">
         <Link to="/" style={linkStyle}>
           <span className="logo">FrankTech</span>
-        </Link>
+        </Link> 
       </div>
       <hr />
       <div className="center">
